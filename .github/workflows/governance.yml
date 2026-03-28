@@ -1,0 +1,9 @@
+name: Governance Sweep
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Sentinel Governance
+        run: bash .governance/governance_check.sh
