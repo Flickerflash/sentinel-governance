@@ -1,0 +1,15 @@
+# .gitignore
+
+# Logs and databases
+*.log
+*.sqlite
+/archive/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Sensitive local config
+.env
+config.local.sh
+*.pem
