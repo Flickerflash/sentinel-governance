@@ -5,5 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Run Sentinel Governance
+      - name: Run Sentinel Governance (Bash)
         run: bash .governance/governance_check.sh
+      - name: Run Sentinel Governance (PowerShell)
+        run: pwsh .governance/governance_check.ps1
