@@ -1,0 +1,20 @@
+{
+  "action": "completed",
+  "installation": {
+    "id": 99999999
+  },
+  "workflow_run": {
+    "id": 12345678,
+    "name": "CI",
+    "conclusion": "failure",
+    "head_branch": "main",
+    "head_sha": "abc123def456",
+    "path": ".github/workflows/ci.yml",
+    "repository": {
+      "name": "test-repo",
+      "owner": {
+        "login": "Flickerflash"
+      }
+    }
+  }
+}
