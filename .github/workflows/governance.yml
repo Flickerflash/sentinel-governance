@@ -9,6 +9,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Validate workflow syntax (actionlint)
+        uses: rhysd/actionlint@v1
+        with:
+          files: .github/workflows/governance.yml
+
       - name: Run Gitleaks
         uses: zricethezav/gitleaks-action@v2.1.2
         env:
