@@ -5,14 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Validate workflow syntax (actionlint)
         uses: rhysd/actionlint@v1.7.7
         with:
-          files: .github/workflows/governance.yml
+          args: .github/workflows/governance.yml
 
       - name: Run Gitleaks
         uses: zricethezav/gitleaks-action@v2.1.2
